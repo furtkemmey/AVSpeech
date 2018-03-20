@@ -40,6 +40,10 @@ class ViewController: UIViewController {
 //        synth?.delegate = self
 
     }
+    
+    @IBAction func btnFramework(_ sender: UIButton) {
+        Speaker.speech(text: "Hello Speaker", country: .US)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 //        synth = AVSpeechSynthesizer()
